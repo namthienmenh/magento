@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Mgroup_Shapeoption>
+            <version>0.1.0</version>
+        </Mgroup_Shapeoption>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <shapeoption>
+                    <file>shapeoption.xml</file>
+                </shapeoption>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <helpers>
+            <shapeoption>
+                <class>Mgroup_Shapeoption_Helper</class>
+            </shapeoption>
+        </helpers>
+        <catalog>
+            <product>
+                <options>
+                    <custom>
+                        <groups>
+                            <shape_option module="shapeoption" translate="label">
+                                <label>Shape option</label>
+                                <render>shapeoption/adminhtml_catalog_product_edit_tab_options_type_shape</render>
+                                <types>
+                                    <shape_option_type
+                                    module="shapeoption" translate="label">
+                                    <label>Editable option</label>
+                                    </shape_option_type>
+                                    <shape_option_disable_type
+                                    module="shapeoption" translate="label">
+                                    <label>Uneditable option</label>
+                                    </shape_option_disable_type>
+                                </types>
+                            </shape_option>
+                        </groups>
+                    </custom>
+                </options>
+            </product>
+        </catalog>
+        <blocks>
+            <shapeoption>
+                <class>Mgroup_Shapeoption_Block</class>
+            </shapeoption>
+            <adminhtml>
+                <rewrite>
+                    <catalog_product_edit_tab_options_option>Mgroup_Shapeoption_Block_Adminhtml_Catalog_Product_Edit_Tab_Options_Option</catalog_product_edit_tab_options_option>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+</config>
