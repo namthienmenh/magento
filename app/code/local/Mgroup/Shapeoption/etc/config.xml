@@ -30,11 +30,8 @@
                                 <render>shapeoption/adminhtml_catalog_product_edit_tab_options_type_shape</render>
                                 <types>
                                     <shape_option_type module="shapeoption" translate="label">
-                                        <label>Editable option</label>
+                                        <label>Dimension</label>
                                     </shape_option_type>
-                                    <shape_option_disable_type module="shapeoption" translate="label">
-                                        <label>Uneditable option</label>
-                                    </shape_option_disable_type>
                                 </types>
                             </shape_option>
                         </groups>
@@ -48,11 +45,16 @@
             </shapeoption>
             <adminhtml>
                 <rewrite>
-                    <catalog_product_edit_tab_options_option>
-                        Mgroup_Shapeoption_Block_Adminhtml_Catalog_Product_Edit_Tab_Options_Option
-                    </catalog_product_edit_tab_options_option>
+                    <catalog_product_edit_tab_options_option>Mgroup_Shapeoption_Block_Adminhtml_Catalog_Product_Edit_Tab_Options_Option</catalog_product_edit_tab_options_option>
                 </rewrite>
             </adminhtml>
         </blocks>
+        <models>
+            <catalog>
+                <rewrite>
+                    <product_option>Mgroup_Shapeoption_Model_Catalog_Product_Option</product_option>
+                </rewrite>
+            </catalog>
+        </models>
     </global>
 </config>

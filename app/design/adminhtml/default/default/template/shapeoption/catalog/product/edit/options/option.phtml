@@ -163,10 +163,6 @@ var productOptionType = {
                 template = OptionTemplateShape;
                 group = 'shape_option';
                 break;
-            case 'shape_option_disable_type':
-                template = OptionTemplateShapeDisable;
-                group = 'shape_option';
-                break;
             default:
                 template = '';
                 group = 'unknown';
@@ -247,6 +243,10 @@ var productOptionType = {
             case 'time':
                 template = OptionTemplateDate;
                 group = 'date';
+                break;
+            case 'shape_option_type':
+                template = OptionTemplateShape;
+                group = 'shape_option';
                 break;
         }
 

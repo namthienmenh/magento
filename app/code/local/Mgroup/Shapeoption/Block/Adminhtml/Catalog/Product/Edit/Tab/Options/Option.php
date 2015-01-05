@@ -11,7 +11,7 @@ class Mgroup_Shapeoption_Block_Adminhtml_Catalog_Product_Edit_Tab_Options_Option
     public function __construct()
     {
         parent::__construct();
-        $this->setTemplate('webtoprint/catalog/product/edit/options/option.phtml');
+        $this->setTemplate('shapeoption/catalog/product/edit/options/option.phtml');
     }
     /**
      * Retrieve html templates for different types of product custom options
@@ -24,6 +24,7 @@ class Mgroup_Shapeoption_Block_Adminhtml_Catalog_Product_Edit_Tab_Options_Option
         $canReadPrice = $this->getCanReadPrice();
 
         $this->getChild('shape_option_option_type')
+            ->setProduct($this->getProduct())
             ->setCanReadPrice($canReadPrice)
             ->setCanEditPrice($canEditPrice);
         $templates = parent::getTemplatesHtml() . "\n" .

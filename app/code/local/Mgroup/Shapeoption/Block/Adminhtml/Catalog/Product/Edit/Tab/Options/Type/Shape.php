@@ -5,13 +5,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-class Mgroup_Shapeoption_Adminhtml_Block_Catalog_Product_Edit_Tab_Options_Type_Date extends
+class Mgroup_Shapeoption_Block_Adminhtml_Catalog_Product_Edit_Tab_Options_Type_Shape extends
     Mage_Adminhtml_Block_Catalog_Product_Edit_Tab_Options_Type_Abstract
 {
     public function __construct()
     {
         parent::__construct();
-        $this->setTemplate('shapeoption/catalog/product/edit/options/type/date.phtml');
+        $this->setTemplate('shapeoption/catalog/product/edit/options/type/shape.phtml');
     }
 
 }
