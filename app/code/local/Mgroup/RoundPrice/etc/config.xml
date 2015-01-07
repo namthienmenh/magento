@@ -70,7 +70,8 @@
 			<totals>
 	            <roundprice_total>
 					<class>roundprice/quote_address_total_roundprice</class>
-					<after>subtotal,freeshipping,tax_subtotal,shipping,grand_total</after>
+					<after>subtotal,freeshipping,tax_subtotal,shipping</after>
+					<before>grand_total</before>
 				</roundprice_total>
 			</totals>
 		</quote>
@@ -78,7 +79,8 @@
                 <totals>
 	            <roundprice_total>
 					<class>roundprice/order_invoice_total_roundprice</class>
-					<after>subtotal,freeshipping,tax_subtotal,shipping,grand_total</after>
+					<after>subtotal,freeshipping,tax_subtotal,shipping</after>
+					<before>grand_total</before>
 				</roundprice_total>
                 </totals>
             </order_invoice>
@@ -86,7 +88,8 @@
                 <totals>
 	            <roundprice_total>
 					<class>roundprice/order_creditmemo_total_roundprice</class>
-					<after>subtotal,freeshipping,tax_subtotal,shipping,grand_total</after>
+					<after>subtotal,freeshipping,tax_subtotal,shipping</after>
+					<before>grand_total</before>
 				</roundprice_total>
                 </totals>
             </order_creditmemo>
