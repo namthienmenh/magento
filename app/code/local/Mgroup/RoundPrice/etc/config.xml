@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Mgroup_RoundPrice>
+      <version>0.1.0</version>
+    </Mgroup_RoundPrice>
+  </modules>
+  <global>
+    <helpers>
+      <roundprice>
+        <class>Mgroup_RoundPrice_Helper</class>
+      </roundprice>
+    </helpers>
+	<models>
+	  <roundprice>
+		<class>Mgroup_RoundPrice_Model</class>
+		<resourceModel>roundprice_mysql4</resourceModel>
+	  </roundprice>
+			<directory>
+				<rewrite>
+					<currency>Mgroup_RoundPrice_Model_Directory_Currency</currency>
+				</rewrite>
+			</directory>
+	</models>
+  </global>
+</config> 
